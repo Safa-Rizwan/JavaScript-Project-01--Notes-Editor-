@@ -15,40 +15,55 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a class="navbar-brand" href="#">Daily Notes</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-      </nav>
-      <!-- container -->
-      <div class="container my-3">
+    </nav>
+    <!-- container -->
+    <div class="container my-3">
         <h1>Welcome to Daily Notes</h1>
         <!-- card -->
         <div class="card">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body">
-              <h5 class="card-title">Add a note</h5>
-              <!-- text area -->
-              <div class="form-group">
-                <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
-                <textarea class="form-control" id="addTxt" rows="3"></textarea>
-              </div>
-              <button class="btn btn-dark" id="addBtn">Add Note</button>
+                <h5 class="card-title">Add a note</h5>
+                <!-- text area -->
+                <div class="form-group">
+                    <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                <button class="btn btn-dark" id="addBtn">Add Note</button>
             </div>
-          </div>
-      </div>
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div id="notes" class="row container-fluid">
+            <!-- card -->
+            <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Notes Title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Delete Notes</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -65,7 +80,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-     <script src="main.js"></script>   
+    <script src="main.js"></script>
 </body>
 
 </html>
